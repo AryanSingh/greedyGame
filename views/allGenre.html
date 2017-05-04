@@ -1,0 +1,32 @@
+<section style="margin:2vmax;">
+   
+  <div style="width:30%;margin:auto;text-align: center;border: 1px solid black" >
+    <!-- <div>
+      {{track.title}}  
+    </div> -->
+    <my-genre style="cursor: pointer; cursor: hand;" ng-repeat="genre in genres" ng-click="directGenre(genre)"></my-genre>
+  </div> 
+  <div ng-click="go('/addGenre')" style="width: 30%;margin:1vmax auto;text-align: center;border:1px solid black;cursor: pointer; cursor: hand;">
+      <p style="margin: 1vmax;">Add New Genre</p>
+  </div>
+  <div style="width:30%;margin:1vmax auto;">
+        <!-- <div style="width: 35%;display: inline-block;">
+            
+        </div> -->
+        <div ng-click="oldPage()" style="width:32%;display: inline-block;background-color: white;text-align: center;cursor: pointer; cursor: hand;">
+          <p ng-if="prevPageId>0">Page {{prevPageId}}</p>  
+        </div>
+        <div style="width:32%;display: inline-block;background-color: #EAEDF2;text-align: center;border:1px solid black;cursor: pointer; cursor: hand;">
+            <p>Page {{currentPageId}}</p>
+        </div>
+        <div ng-click="newPage()" style="width:32%;display: inline-block;background-color: white;text-align: center;cursor: pointer; cursor: hand;">
+            <p ng-if="nextUrl!=null">Page {{nextPageId}}</p>
+        </div>
+        <!-- <div style="width: 35%;display: inline-block;">
+            
+        </div> -->
+  </div> 
+</section>
+
+
+
