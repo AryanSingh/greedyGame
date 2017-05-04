@@ -35,11 +35,7 @@
     "watch": "^0.13.0"
   },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build",
-    "server": "gulp server",
-    "serverbuild": "gulp server-build",
-    "postinstall": "npm install gulp-sass gulp-imagemin --save&&bower install --no-interactive"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
